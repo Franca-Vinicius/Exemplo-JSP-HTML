@@ -77,9 +77,22 @@ public final class cliente_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <body class=\"nav-md\">\n");
       out.write("        <div class=\"container body\">\n");
       out.write("            <div class=\"main_container\">\n");
-      out.write("            \n");
+      out.write("                \n");
       out.write("                ");
-      out.write("        <div class=\"col-md-3 left_col\">\n");
+ 
+    try {
+    String user=(String) session.getAttribute("usuario");
+if (user.equals("")) {
+    response.sendRedirect("login.jsp");
+}
+    } catch (NullPointerException e) {
+        response.sendRedirect ("login.jsp");
+        
+        }
+
+      out.write("\n");
+      out.write("\n");
+      out.write("<div class=\"col-md-3 left_col\">\n");
       out.write("          <div class=\"left_col scroll-view\">\n");
       out.write("            <div class=\"navbar nav_title\" style=\"border: 0;\">\n");
       out.write("              <a href=\"index.html\" class=\"site_title\"><i class=\"fa fa-paw\"></i> \n");
@@ -146,7 +159,7 @@ public final class cliente_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </ul>\n");
       out.write("                  </li>\n");
       out.write("                  \n");
-      out.write("                  <li><a href=\"form.html\"><i class=\"fa fa-edit\"></i> SAIR </a>\n");
+      out.write("                  <li><a href=\"login.jsp\"><i class=\"fa fa-edit\"></i> SAIR </a>\n");
       out.write("                  </li>\n");
       out.write("                  \n");
       out.write("                  \n");
@@ -429,7 +442,7 @@ public final class cliente_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <!-- Custom Theme Scripts -->\n");
       out.write("    <script src=\"js/custom.min.js\"></script>");
       out.write("\n");
-      out.write("    \n");
+      out.write("                \n");
       out.write("            </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

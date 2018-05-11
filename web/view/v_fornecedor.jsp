@@ -24,7 +24,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>PÁGINA DO CLIENTE</h2>
+                    <h2>Plain Page</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -43,7 +43,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                      CADASTRO DO CLIENTE....
+                      PAGINA DO FORNECEDOR ...
                   </div>
                 </div>
               </div>
